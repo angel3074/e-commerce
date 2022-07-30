@@ -6,7 +6,6 @@
 
 .all-content{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: lightgreen;
 }
 .nav{
   display: flex;
@@ -15,7 +14,10 @@
   position: fixed;
   z-index: 100;
   width: 100%;
+  height: 50px;
+  transition: 0.4s;
 }
+
 .container-options{
   display: flex;
   justify-content: center;
@@ -228,6 +230,9 @@ ul{
     justify-content: center;
     grid-column: 1/2;
   }
+  .products-detail{
+    grid-template-columns: repeat(4,1fr);
+  }
 }
 
 @media (min-width: 1000px) {
@@ -241,7 +246,16 @@ ul{
     max-width: 1000px;
     margin: auto;
   }
-  .products-detail{
-    grid-template-columns: repeat(4,1fr);
-  }
+}
+
+.products-detail{
+  cursor: pointer;
+}
+
+.nav{
+  background-color: rgba(225, 225, 225, 0.76);
+}
+
+.add-btn{
+  cursor: pointer;
 }
